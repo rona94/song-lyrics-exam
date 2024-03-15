@@ -4,7 +4,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST["title"];
     $artist = $_POST["artist"];
     $song_lyrics = $_POST["song_lyrics"];
-    $date_created = date("Y-m-d H:i:s");
+    $date_created = date("Y-m-d");
 
     try {
         require_once "db-host.php";
